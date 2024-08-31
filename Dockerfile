@@ -4,7 +4,7 @@ FROM php:8.3-fpm
 # Set the working directory
 WORKDIR /var/www/html
 
-# Install system dependencies
+# Install system dependencies and PHP extensions
 RUN apt-get update && apt-get install -y \
     build-essential \
     libpng-dev \
@@ -12,13 +12,14 @@ RUN apt-get update && apt-get install -y \
     libfreetype6-dev \
     libonig-dev \
     libzip-dev \
+    libicu-dev \       
     zip \
     unzip \
     git \
     curl \
     vim \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install pdo pdo_mysql gd zip
+    && docker-php-ext-install pdo pdo_mysql gd zip intl  # Add intl here
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -33,3 +34,4 @@ RUN chown -R www-data:www-data /var/www/html \
 # Expose port 9000 and start PHP-FPM server
 EXPOSE 9000
 CMD ["php-fpm"]
+
