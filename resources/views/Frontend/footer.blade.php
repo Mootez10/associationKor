@@ -17,8 +17,8 @@
                                 <div class="wdgt-box">
                                     <h4>{{ $set_footer->title1 }}</h4>
                                     <ul>
-                                        <li><a href="/home" title="">{{ $set_footer->field1 }}</a></li>
-                                        <li><a href="/home" title="">{{ $set_footer->field2 }}</a>
+                                        <li><a href="#" title="">{{ $set_footer->field1 }}</a></li>
+                                        <li><a href="#" title="">{{ $set_footer->field2 }}</a>
                                             <ul>
                                                 <li><a href="/team" title="">برنامج الماهر</a></li>
                                                 <li><a href="/team2" title="">برنامج الأرقم</a></li>
@@ -36,9 +36,9 @@
                                 <div class="wdgt-box">
                                     <h4>{{ $set_footer->title2 }}</h4>
                                     <ul>
-                                        <li><a href="/about" title="">{{ $set_footer->field3 }}</a></li>
-                                        <li><a href="/contact" title=""> {{ $set_footer->field4 }}</a></li>
-                                        <li><a href="/event" title="">{{ $set_footer->field5 }}</a></li>
+                                        <li><a href="/event" title="">{{ $set_footer->field3 }}</a></li>
+                                        <li><a href="/about" title=""> {{ $set_footer->field4 }}</a></li>
+                                        <li><a href="/contact" title="">{{ $set_footer->field5 }}</a></li>
                                     </ul>
                                 </div>
                             </div>
