@@ -16,6 +16,14 @@ services:
       DB_DATABASE: associationKor
       DB_USERNAME: root
       DB_PASSWORD: root
+      MAIL_MAILER: smtp
+      MAIL_HOST: sandbox.smtp.mailtrap.io
+      MAIL_PORT: 2525
+      MAIL_USERNAME: 6d66a686a1f838
+      MAIL_PASSWORD: 9379c752ceee46
+      MAIL_ENCRYPTION: tls
+      MAIL_FROM_ADDRESS: "from@example.com"
+      MAIL_FROM_NAME: "${APP_NAME}"
     networks:
       - app-network
 
@@ -47,10 +55,23 @@ services:
     networks:
       - app-network
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
+    networks:
+      - app-network
+
 volumes:
   db_data:
 
 networks:
   app-network:
     driver: bridge
-
