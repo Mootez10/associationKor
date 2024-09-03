@@ -43,11 +43,6 @@
             </div>
         </section>
         <section>
-            <div class="gap no-gap">
-                <div class="contact-loc" id="contact-loc"></div>
-            </div>
-        </section>
-        <section>
             <div class="gap">
                 <div class="container">
                     <div class="sec-title text-center">
@@ -74,7 +69,7 @@
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-lg-12">
                                     <textarea name="message" placeholder="إكتب هنا"></textarea>
-                                    <button class="thm-btn brd-rd40" type="submit">اتصل بنا</button>
+                                    <button class="thm-btn brd-rd40" type="submit">أرسل</button>
                                 </div>
                             </div>
                         </form>

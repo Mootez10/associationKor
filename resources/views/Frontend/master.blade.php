@@ -118,51 +118,6 @@
                 </div>
             </div>
         </section>
-        
-        
-        {{-- <section>
-            <div class="gap">
-                <div class="container">
-                    <div class="evnt-pry-wrap">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-lg-8">
-                                <div class="sec-title text-center">
-                                    <div class="sec-title-inner">
-                                        <h3><span>الأحداث</span> القادمة</h3>
-                                    </div>
-                                    <h3>عمر بن الخطاب تنظم أحداث متعددة طوال العام</h3>
-                                </div>
-                                <div class="evnt-wrap remove-ext5">
-                                    <div class="row">
-                                        @foreach ($evenements as $evenement)
-                                        <div class="col-md-4 col-sm-4 col-lg-4">
-                                            <div class="evnt-box">
-                                                <div class="evnt-thmb">
-                                                    <a href="#" title=""><img src="assets/images/resources/{{ $evenement->picture }}" alt="saifi.jpg" ></a>
-                                                </div>
-                                                <div class="evnt-info">
-                                                    <h4>{{ $evenement->name }}</h4>
-                                                    <ul class="pst-mta">
-                                                        <li class="thm-clr">{{ $evenement->date }}</li>
-                                                        <li class="thm-clr">{{ $evenement->date }}</li>
-                                                    </ul>
-                                                    <p>{{ $evenement->description }}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        @endforeach
-                                        
-
-                                    </div>
-                                </div><!-- Events Wrap -->
-                            </div>
-                        </div>
-                    </div><!-- Events & Prayer Wrap -->
-                </div>
-            </div>
-
-            
-        </section> --}}
         <section>
             <div class="gap">
                 <div class="container">
